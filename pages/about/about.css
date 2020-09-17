@@ -1,0 +1,18 @@
+ion-content {
+  background: linear-gradient(to bottom, #ee9ca7, #ffdde1)
+}
+
+h2 {
+  color: #ffdde1;
+  text-align: center;
+  
+}
+
+p {
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ee9ca7, #ffdde1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
