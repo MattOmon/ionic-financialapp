@@ -14,3 +14,35 @@
   <p>
    The value of your old phone will be assessed based on its current condition. 
  </p>
+
+ <ion-item>
+  <ion-label position="stacked">Gadget Price</ion-label>
+  <ion-input type="number"  [(ngModel)]="GadgetPrice"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Old Phone Appraised Value</ion-label>
+  <ion-input type="number"  [(ngModel)]="OldPhoneAppraisedValue"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Payment Terms</ion-label>
+  <ion-input type="number"  [(ngModel)]="PaymentTerms"></ion-input>
+ </ion-item>
+
+<br /> <br />
+<button ion-button color="danger" (click)="compute()">Compute</button>    
+<br /> <br />
+<ion-item *ngIf="OldPhoneAppraisedValue">
+  <h4> Old Phone Appraised Value: {{OldPhoneAppraisedValue}} </h4>
+    </ion-item>
+
+<br /> 
+  <ion-item *ngIf="FinancedAmount">
+   <h3> Financed Amount: {{FinancedAmount}} </h3>
+    </ion-item>
+
+<br /> 
+  <ion-item *ngIf="MonthlyPayment">
+   <h3> Monthly Payment: {{MonthlyPayment}} </h3>
+    </ion-item>

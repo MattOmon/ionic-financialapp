@@ -8,13 +8,16 @@ import { NavController } from 'ionic-angular';
 
 })
 export class HomePage {
-  initValue: number;
-  depValue: number;
+  GadgetPrice: number;
+  OldPhoneAppraisedValue: number;
+  PaymentTerms: number;
 
   constructor(public navCtrl: NavController) {
   }
-
 compute() {
-  this.depValue = (this.initValue * 0.40);
-}
+  this.OldPhoneAppraisedValue = (this.OldPhoneAppraisedValue * 1);
+  this.FinancedAmount = (this.GadgetPrice-this.OldPhoneAppraisedValue);
+  this.TotalInterestPayable = (this.FinancedAmount * 1.30 / 100) * 12;
+  this.MonthlyPayment = (this.FinancedAmount + this.TotalInterestPayable) / 12; 
+  }
 }
